@@ -1,9 +1,5 @@
 def unsafe?(speed)
- if speed == "unsafe"
-   > 60
- else
-   < 40
- end
+ if speed < 40 || speed > 60
 end
 
 binding.pry 
